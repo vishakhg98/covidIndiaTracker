@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from 'react';
 import { fetchApiData, NUMBER_OF_TOP_ITEMS } from '../utils/Constants';
 import { sortBy } from 'lodash';
 
-const dummyData = require('../SampleData/dummyData.json');
+// const dummyData = require('../SampleData/dummyData.json');
 export const GlobalContext = createContext();
 
 function ContextProvider(props) {
@@ -123,12 +123,6 @@ function ContextProvider(props) {
 		// console.log(covidData.statewise[1].state);
 		setTableData(tableDataTemp);
 
-		// Calculating total Count
-		function adder(array, obj) {
-			let totalTemp = 0;
-			array.forEach(i => (totalTemp += i[obj]));
-			return totalTemp;
-		}
 		// setTotalCount({
 		//   active: adder(tableDataTemp, "active"),
 		//   recovered: adder(tableDataTemp, "recovered"),
