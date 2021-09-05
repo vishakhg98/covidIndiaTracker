@@ -1,0 +1,8 @@
+.bedHead {
+  display: flex;
+  align-items: center;
+}
+
+.bedHeadIcon {
+  margin-right: 5px;
+}

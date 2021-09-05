@@ -1,0 +1,19 @@
+.horizontalBarChartBase {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.customTooltipLabel {
+  color: white;
+  background-color: var(--cardBgColor);
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  border-radius: var(--cardBorerRadius);
+}
+
+.centerlabelTop {
+  /* fill: red; */
+  /* margin-top: 15px; */
+}

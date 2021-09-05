@@ -1,0 +1,69 @@
+.tableHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.refreshButton {
+  cursor: pointer;
+}
+
+/* Scrollbar */
+.tableBase {
+  height: 80vh;
+  overflow: scroll;
+}
+.tableBase::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+.tableBase::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.tableBase::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--primaryColor);
+}
+.tableBase::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.table th {
+  color: var(--secondaryColor);
+  text-align: left;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  cursor: pointer;
+  /* padding: 5px; */
+  /* padding-right: 5px; */
+  /* padding-bottom: 5px; */
+}
+
+tr.borderBottom td {
+  border-bottom: 1px solid var(--primaryColor);
+  padding: 10px;
+  padding-left: 0;
+  font-size: 14px;
+}
+
+.col1 {
+  width: 30%;
+}
+
+.col2,
+.col3,
+.col4 {
+  width: 15%;
+}
+
+.state::first-letter {
+  text-transform: capitalize;
+}
+
+[data-activetop3="true"] {
+  background-color: #bb184e;
+}

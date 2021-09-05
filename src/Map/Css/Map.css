@@ -1,0 +1,23 @@
+.mapBase {
+  position: relative;
+  margin-bottom: var(--cardMargin);
+  height: 50vh;
+}
+
+.locationHead {
+  position: absolute;
+  margin-right: var(--headingBottomMargin);
+}
+
+.locationSelected {
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--cardBgColor);
+  border: 1px solid var(--primaryColor);
+}
+
+.map {
+  width: 65%;
+  /* height: calc(100% - 90px); */
+  height: 100%;
+}
