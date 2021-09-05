@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from 'react';
 import { fetchApiData, NUMBER_OF_TOP_ITEMS } from '../utils/Constants';
 import { sortBy } from 'lodash';
 
-// const dummyData = require('../SampleData/dummyData.json');
+const dummyData = require('../SampleData/dummyData.json');
 export const GlobalContext = createContext();
 
 function ContextProvider(props) {
@@ -30,12 +30,12 @@ function ContextProvider(props) {
 		//   "https://api.covid19india.org/data.json"
 		// );
 
-		const covidData = await fetchApiData(
-			'https://api.covid19india.org/data.json'
-			// 'https://data.covid19india.org/v4/min/data.min.json'
-			// 'https://data.covid19india.org/v4/min/timeseries.min.json'
-		);
-		// || dummyData;
+		const covidData =
+			(await fetchApiData(
+				'https://api.covid19india.org/data.json'
+				// 'https://data.covid19india.org/v4/min/data.min.json'
+				// 'https://data.covid19india.org/v4/min/timeseries.min.json'
+			)) || dummyData;
 
 		console.log(covidData.tested);
 
